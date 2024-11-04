@@ -1,0 +1,47 @@
+<font id="d1"></font>
+<h1>Sun Conure</h1>
+<p id="p1">The sun conure is a medium-sized brightly colored parrot native to northeastern South America. The adult male and female are similar in appearance, with predominantly golden-yellow plumage and orange-flushed underparts and face. Sun conures are very social birds, typically living in flocks. They form monogamous pairs for reproduction and nest in palm cavities in the tropics. Sun conures mainly feed on fruits, flowers, berries, blossoms, seeds, nuts and insects. Conures are commonly bred and kept in aviculture and may live up to 30 years.</p>
+<br>
+
+
+<button onclick="this.innerHTML='New Label'">Label</button>
+
+<button onclick="g()">Color</button>
+
+<button onclick="document.getElementById('d1').innerHTML='(Aratingasolstitialis)'">Latin</button>
+
+<button onclick="displayImage()">Image</button>
+
+<img id="image" src="redsquare.jpg">
+    <script>
+        function displayImage() {
+            // Change the image source to "bluesquare.jpg"
+            document.getElementById("image").src = "bluesquare.jpg";
+        }
+    </script>
+
+
+<script>function g() {document.getElementById('p1').style.color="red";}
+</script>
+
+<br><br>
+<button onclick="f (x) ; ">Add</button>
+<button id = "val">Value</button>
+<script>var x = 0;
+function f(y) {x =y +1; document.getElementById('val').innerHTML=x;}
+</script>
+
+
+<br><br>
+<button id="b" onclick="h() ">Timer !</button>
+<script> var x = 0;
+function h () {
+setInterval (function () {
+var y = 'time: '+ x / 10;
+if(x% 10 == 0) y = y + '. 0';
+Y=y + 's';
+document.getElementById('b').innerHTML=y;
+x=x+1;}, 100) ;
+}
+</script>
+
